@@ -28,6 +28,18 @@
             background-position: right 20px bottom 10px;
         }
 
+        .background-position--origin {
+            padding: 10px;
+            background: url(assets/code-pirate-icon.svg) no-repeat #58a; 
+            background-position: right 10px bottom 10px;
+        }
+
+        .background-position--origin-2 {
+            padding: 10px;
+            background: url(assets/code-pirate-icon.svg) no-repeat bottom right #58a; 
+            background-origin: content-box;
+        }
+
         .background-position__text {
             margin: 0;
             padding: 15px;
@@ -43,6 +55,16 @@
     </div>
     
     <div class="background-position background-position--next">
+        <p class="background-position__text">Code Pirate</p>
+     </div>
+    
+     <h2>Решение с использованием background-origin</h2>
+
+     <div class="background-position background-position--next background-position--origin">
+        <p class="background-position__text">Code Pirate</p>
+     </div>
+
+     <div class="background-position background-position--next background-position--origin-2">
         <p class="background-position__text">Code Pirate</p>
      </div>
 </body>
