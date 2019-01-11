@@ -33,6 +33,13 @@
             color: #fff;
             font-size: 16px;
         }
+
+        .inside-border-radius--outline {
+            background: tan;
+            border-radius: .8em;
+            padding: 1em;
+            outline: .8em solid #655;
+        }
     </style>
 </head>
 <body>
@@ -42,7 +49,11 @@
             <span class="inside-border-radius__text">У меня замечательные скругленные углы внутри, разве я не прекрасен?</span>
         </div>
     </div>
-    
+
+    <h2>Один элемент, использование outline</h2>
+    <div class="inside-border-radius inside-border-radius--outline">
+        <span class="inside-border-radius__text">Я грустный элемент, потому что мой контур не повторяет мои скругленные углы :-(</span>
+    </div>
     
 </body>
 </html>
