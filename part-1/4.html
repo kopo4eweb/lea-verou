@@ -40,6 +40,14 @@
             padding: 1em;
             outline: .8em solid #655;
         }
+
+        .inside-border-radius--one-element {
+            background: tan;
+            border-radius: .8em;
+            padding: 1em;
+            box-shadow: 0 0 0 .34em #655;
+            outline: .6em solid #655;
+        }
     </style>
 </head>
 <body>
@@ -52,6 +60,11 @@
 
     <h2>Один элемент, использование outline</h2>
     <div class="inside-border-radius inside-border-radius--outline">
+        <span class="inside-border-radius__text">Я грустный элемент, потому что мой контур не повторяет мои скругленные углы :-(</span>
+    </div>
+
+    <h2>Решение</h2>
+    <div class="inside-border-radius inside-border-radius--one-element">
         <span class="inside-border-radius__text">Я грустный элемент, потому что мой контур не повторяет мои скругленные углы :-(</span>
     </div>
     
