@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Фон в полоску</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px;
+            background: #f1f0f1;
+        }
+        code {
+            display: block;
+            margin: 5px 0 15px 0;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col {
+            flex: 0 1 25%;
+            max-width: 25%; 
+
+        }
+        .background {
+            width: 100%;
+            padding-bottom: 75%;
+            outline: 1px solid #ccc;
+            background: linear-gradient(#fb3, #58a);
+        }
+        .background--ex-1 { background: linear-gradient(#fb3 20%, #58a 80%); }
+        .background--ex-2 { background: linear-gradient(#fb3 40%, #58a 60%); }
+        .background--ex-3 { background: linear-gradient(#fb3 50%, #58a 50%); }
+        .background--ex-4 { 
+            background: linear-gradient(#fb3 50%, #58a 50%); 
+            background-size: 100% 30px;
+            background-repeat: no-repeat;
+        }
+        .background--ex-5 { 
+            background: linear-gradient(#fb3 50%, #58a 50%); 
+            background-size: 100% 30px;            
+        }
+        .background--ex-6 { 
+            background: linear-gradient(#fb3 30%, #58a 30%); 
+            background-size: 100% 30px;            
+        }
+        .background--ex-7 { 
+            background: linear-gradient(#fb3 30%, #58a 0); 
+            background-size: 100% 30px;            
+        }
+        .background--ex-8 { 
+            background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0); 
+            background-size: 100% 45px;            
+        }
+    </style>
+</head>
+<body>
+    <h1>Горизонтальные полоы</h1>
+    <div class="grid">
+        <div class="col">
+            <div class="background"></div>
+            <code>background: linear-gradient(#fb3, #58a);</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-1"></div>
+            <code>background: linear-gradient(#fb3 20%, #58a 80%);</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-2"></div>
+            <code>background: linear-gradient(#fb3 40%, #58a 60%);</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-3"></div>
+            <code>background: linear-gradient(#fb3 50%, #58a 50%);</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-4"></div>
+            <code>background: linear-gradient(#fb3 50%, #58a 50%); <br>
+                background-size: 100% 30px;<br>
+                background-repeat: no-repeat;</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-5"></div>
+            <code>background: linear-gradient(#fb3 50%, #58a 50%); <br>
+                background-size: 100% 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-6"></div>
+            <code>background: linear-gradient(#fb3 30%, #58a 30%); <br>
+                background-size: 100% 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-7"></div>
+            <code>background: linear-gradient(#fb3 30%, #58a 0); <br>
+                background-size: 100% 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-8"></div>
+            <code> background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0); <br>
+                background-size: 100% 45px; </code>
+        </div>
+    </div>
+    
+</body>
+</html>
