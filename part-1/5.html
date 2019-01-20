@@ -71,6 +71,19 @@
             background: linear-gradient(90deg, #fb3 50%, #58a 0); 
             background-size: 30px 100%;             
         }
+
+        .background--ex-12 { 
+            background: linear-gradient(45deg, #fb3 50%, #58a 0); 
+            background-size: 30px 30px;             
+        }
+        .background--ex-13 { 
+            background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0); 
+            background-size: 30px 30px;             
+        }
+        .background--ex-14 { 
+            background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0); 
+            background-size: 42px 42px;             
+        }
     </style>
 </head>
 <body>
@@ -140,5 +153,24 @@
         </div>
     </div>
     
+    <h1>Диагональные полосы</h1>
+    <div class="grid">
+        <div class="col">
+            <div class="background background--ex-12"></div>
+            <code>background: linear-gradient(45deg, #fb3 50%, #58a 0);<br> 
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-13"></div>
+            <code>background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);<br> 
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--ex-14"></div>
+            <code>background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);<br> 
+                background-size: 42px 42px;</code>
+        </div>
+    </div>
+
 </body>
 </html>
