@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сложные фоновые узоры</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px;
+            background: #f1f0f1;
+        }
+        code {
+            display: block;
+            margin: 5px 0 15px 0;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col {
+            flex: 0 1 25%;
+            max-width: 25%; 
+
+        }
+        .background {
+            width: 100%;
+            padding-bottom: 75%;
+            outline: 1px solid #ccc;
+            background: #fff;
+            background-image: linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 0);
+            background-size: 30px 30px;
+        }
+        .background--exp-1 {
+            background-image: linear-gradient(rgba(200, 0, 0, .5) 50%, transparent 0);
+        }
+        .background--exp-2 {
+            background-image: linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 0), linear-gradient(rgba(200, 0, 0, .5) 50%, transparent 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Сложные фоновые узоры</h1>
+    <div class="grid">
+        <div class="col">
+            <div class="background"></div>
+            <code>background-image: linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 0);</code>
+        </div>        
+        <div class="col">
+            <div class="background background--exp-1"></div>
+            <code>background-image: linear-gradient(rgba(200, 0, 0, .5) 50%, transparent 0);</code>
+        </div> 
+        <div class="col">
+            <div class="background background--exp-2"></div>
+            <code>background-image: linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 0), linear-gradient(rgba(200, 0, 0, .5) 50%, transparent 0);</code>
+        </div> 
+
+    </div>
+
+
+</body>
+</html>
