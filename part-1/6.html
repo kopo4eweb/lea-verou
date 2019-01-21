@@ -56,6 +56,24 @@
                 linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0);
             background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
         }
+
+        .background--exp-5 {
+            background: #655;
+            background-image: radial-gradient(tan 30%, transparent 0);
+            background-size: 30px 30px;
+        }
+        .background--exp-6 {
+            background: #655;
+            background-image: radial-gradient(tan 30%, transparent 0), radial-gradient(tan 30%, transparent 0);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        .background--exp-7 {
+            background: #655;
+            background-image: radial-gradient(tan 4px, transparent 0), radial-gradient(tan 4px, transparent 0);
+            background-size: 46px 46px;
+            background-position: 0 0, 23px 23px;
+        }
     </style>
 </head>
 <body>
@@ -92,6 +110,30 @@
                     linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0);<br>
                 background-size: 75px 75px, 75px 75px,<br>
                     15px 15px, 15px 15px;</code>
+        </div>
+    </div>
+
+    <h1>Узор в горошек</h1>
+    <div class="grid">
+        <div class="col">
+            <div class="background background--exp-5"></div>
+            <code>background: #655;<br>
+                background-image: radial-gradient(tan 30%, transparent 0);<br>
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-6"></div>
+            <code>background: #655;<br>
+            background-image: radial-gradient(tan 30%, transparent 0), radial-gradient(tan 30%, transparent 0);<br>
+            background-size: 30px 30px;<br>
+            background-position: 0 0, 15px 15px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-7"></div>
+            <code>background: #655;<br>
+            background-image: radial-gradient(tan 4px, transparent 0), radial-gradient(tan 4px, transparent 0);<br>
+            background-size: 46px 46px;<br>
+            background-position: 0 0, 23px 23px;</code>
         </div>
     </div>
 
