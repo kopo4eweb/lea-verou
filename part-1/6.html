@@ -74,6 +74,47 @@
             background-size: 46px 46px;
             background-position: 0 0, 23px 23px;
         }
+
+        .background--exp-8 {
+            background: #eee;
+            background-image: linear-gradient(45deg, #bbb 50%, transparent 0);
+            background-size: 30px 30px;
+        }
+        .background--exp-9 {
+            background: #eee;
+            background-image: linear-gradient(45deg, #bbb 25%, transparent 0);
+            background-size: 30px 30px;
+        }
+        .background--exp-10 {
+            background: #eee;
+            background-image: linear-gradient(45deg, transparent 75%, #bbb 0);
+            background-size: 30px 30px;
+        }
+        .background--exp-11 {
+            background: #eee;
+            background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0);
+            background-size: 30px 30px;
+        }
+        .background--exp-12 {
+            background: #eee;
+            background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0);
+            background-position: 0 0, 15px 15px;
+            background-size: 30px 30px;
+        }
+        .background--exp-13 {
+            background: #eee;
+            background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0),
+                            linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0);
+            background-position: 0 0, 15px 15px, 15px 15px, 30px 30px;
+            background-size: 30px 30px;
+        }
+        .background--exp-14 {
+            background: #eee;
+            background-image: linear-gradient(45deg, rgba(0,0,0,.25) 25%, transparent 0, transparent 75%, rgba(0,0,0,.25) 0), 
+                            linear-gradient(45deg, rgba(0,0,0,.25) 25%, transparent 0, transparent 75%, rgba(0,0,0,.25) 0);
+            background-position: 0 0, 15px 15px;
+            background-size: 30px 30px;
+        }
     </style>
 </head>
 <body>
@@ -151,6 +192,58 @@
     <code>
         @include polka(30px, 30%m #655, tan);
     </code>
+
+
+    <h1>Шахматные доски</h1>
+    <div class="grid">
+        <div class="col">
+            <div class="background background--exp-8"></div>
+            <code>background: #eee;<br>
+                background-image: linear-gradient(45deg, #bbb 50%, transparent 0);<br>
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-9"></div>
+            <code>background: #eee;<br>
+                background-image: linear-gradient(45deg, #bbb 25%, transparent 0);<br>
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-10"></div>
+            <code>background: #eee;<br>
+                background-image: linear-gradient(45deg, transparent 75%, #bbb 0);<br>
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-11"></div>
+            <code>background: #eee;<br>
+                background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0);<br>
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-12"></div>
+            <code>background: #eee;<br>
+                background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0);<br>
+                background-position: 0 0, 15px 15px;<br>
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-13"></div>
+            <code>background: #eee;<br>
+                background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0),<br>
+                            linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0);<br>
+                background-position: 0 0, 15px 15px, 15px 15px, 30px 30px;<br>
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-14"></div>
+            <code>background: #eee;<br>
+                background-image: linear-gradient(45deg, rgba(0,0,0,.25) 25%, transparent 0, transparent 75%, rgba(0,0,0,.25) 0), <br>
+                            linear-gradient(45deg, rgba(0,0,0,.25) 25%, transparent 0, transparent 75%, rgba(0,0,0,.25) 0);<br>
+                background-position: 0 0, 15px 15px;<br>
+                background-size: 30px 30px;</code>
+        </div>
+    </div>
 
 </body>
 </html>
