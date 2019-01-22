@@ -137,5 +137,20 @@
         </div>
     </div>
 
+    <h2>Миксин на SCSS</h2>
+    <code>
+        @mixin polka($size, $dot, $base, $accent) {<br>
+            &nbsp;&nbsp;background: $base;<br>
+            &nbsp;&nbsp;background-image: radial-gradient($accent $dot, transparent 0), <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;radial-gradient($accent $dot, transparent 0);<br>
+            &nbsp;&nbsp;background-size: $size $size;<br>
+            &nbsp;&nbsp;background-position: 0 0, $size/2 $size/2;<br>
+        }
+    </code>
+    <p><b>Вызов миксина в SCSS</b></p>
+    <code>
+        @include polka(30px, 30%m #655, tan);
+    </code>
+
 </body>
 </html>
