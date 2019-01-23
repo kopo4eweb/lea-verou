@@ -115,6 +115,25 @@
             background-position: 0 0, 15px 15px;
             background-size: 30px 30px;
         }
+        .background--exp-15 {
+            background: #eee;
+            background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.25) 25%, transparent 0, transparent 75%, rgba(255, 0, 0, 0.25) 0), 
+                            linear-gradient(45deg, rgba(0,0,0,.25) 25%, transparent 0, transparent 75%, rgba(0,0,0,.25) 0);
+            background-position: 0 0, 15px 15px;
+            background-size: 30px 30px;
+        }
+        .background--exp-16 {
+            background: #eee url(assets/checkerboard.svg);
+            background-size: 30px 30px;
+        }
+        .background--exp-17 {
+            background: #eee url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill-opacity=".25" > \
+                <rect x="50" width="50" height="50" /> \
+                <rect y="50" width="50" height="50" /> \
+            </svg>');
+            background-size: 30px 30px;
+        }
     </style>
 </head>
 <body>
@@ -190,7 +209,7 @@
     </code>
     <p><b>Вызов миксина в SCSS</b></p>
     <code>
-        @include polka(30px, 30%m #655, tan);
+        @include polka(30px, 30%, #655, tan);
     </code>
 
 
@@ -243,7 +262,44 @@
                 background-position: 0 0, 15px 15px;<br>
                 background-size: 30px 30px;</code>
         </div>
+        <div class="col">
+            <div class="background background--exp-15"></div>
+            <code>background: #eee;<br>
+                background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.25) 25%, transparent 0, transparent 75%, rgba(255, 0, 0, 0.25) 0), <br>
+                            linear-gradient(45deg, rgba(0,0,0,.25) 25%, transparent 0, transparent 75%, rgba(0,0,0,.25) 0);<br>
+                background-position: 0 0, 15px 15px;<br>
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-16"></div>
+            <code>background: #eee url(assets/checkerboard.svg);<br>
+                background-size: 30px 30px;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-17"></div>
+            <code>background: #eee url('data:image/svg+xml,\<br>
+                &lt;svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill-opacity=".25" &gt; \ <br>
+                    &lt;rect x="50" width="50" height="50" /&gt; \ <br>
+                    &lt;rect y="50" width="50" height="50" /&gt; \ <br>
+                &lt;/svg&gt;'); <br>
+                background-size: 30px 30px;</code>
+        </div>
     </div>
+
+    <h2>Миксин на SCSS</h2>
+    <code>
+        @mixin chckerboard($size, $base, $accent: rgba(0,0,0, .25)) {<br>
+            &nbsp;&nbsp;background: $base;<br>
+            &nbsp;&nbsp;background-image: linear-gradient(45deg, $accent 25%, transparent 0, transparent 75%, $accent 0), <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;linear-gradient(45deg, $accent 25%, transparent 0, transparent 75%, $accent 0);<br>
+            &nbsp;&nbsp;background-position: 0 0, $size $size;<br>
+            &nbsp;&nbsp;background-size: 2*$size 2*$size;<br>
+        }
+    </code>
+    <p><b>Вызов миксина в SCSS</b></p>
+    <code>
+        @include chckerboard(15px,  #58a, tan);
+    </code>
 
 </body>
 </html>
