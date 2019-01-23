@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Псевдо случайные фоны</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px;
+            background: #f1f0f1;
+        }
+        code {
+            display: block;
+            margin: 5px 0 15px 0;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col {
+            flex: 0 1 100%;
+            max-width: 100%; 
+
+        }
+        .background {
+            width: 100%;
+            padding-bottom: 15%;
+            outline: 1px solid #ccc;
+        }
+        .background--exp-1 {            
+            background: linear-gradient(90deg, #fb3 15%, #655 0, #655 40%, #ab4 0, #ab4 65%, rgb(230,208,208) 0);
+            background-size: 80px 100%;
+        }
+        .background--exp-2 {            
+            background: hsl(20, 40%, 90%);
+            background-image: linear-gradient(90deg, #fb3 10px, transparent 0),
+                            linear-gradient(90deg, #ab4 20px, transparent 0),
+                            linear-gradient(90deg, #655 20px, transparent 0);
+            background-size: 80px 100%, 60px 100%, 40px 100%;
+        }        
+        .background--exp-3 {            
+            background: hsl(20, 40%, 90%);
+            background-image: linear-gradient(90deg, #fb3 11px, transparent 0),
+                            linear-gradient(90deg, #ab4 23px, transparent 0),
+                            linear-gradient(90deg, #655 41px, transparent 0);
+            background-size: 41px 100%, 61px 100%, 83px 100%;
+        }      
+    </style>
+</head>
+<body>
+    <h1>Псевдо случайные фоны</h1>
+    <div class="grid">
+        <div class="col">
+            <div class="background background--exp-1"></div>
+            <code>background: linear-gradient(90deg, #fb3 15%, #655 0, #655 40%, #ab4 0, #ab4 65%, rgb(230,208,208) 0);<br>
+                background-size: 80px 100%;</code>
+        </div>
+        <div class="col">
+            <div class="background background--exp-2"></div>
+            <code> background: hsl(20, 40%, 90%);<br>
+                background-image: linear-gradient(90deg, #fb3 10px, transparent 0),<br>
+                                linear-gradient(90deg, #ab4 20px, transparent 0),<br>
+                                linear-gradient(90deg, #655 20px, transparent 0);<br>
+                background-size: 80px 100%, 60px 100%, 40px 100%;</code>
+        </div>
+        div class="col">
+            <div class="background background--exp-3"></div>
+            <code> background: hsl(20, 40%, 90%);<br>
+                background-image: linear-gradient(90deg, #fb3 11px, transparent 0),<br>
+                linear-gradient(90deg, #ab4 23px, transparent 0),<br>
+                linear-gradient(90deg, #655 41px, transparent 0);<br>
+                background-size: 41px 100%, 61px 100%, 83px 100%;</code>
+        </div>
+    </div>
+    
+</body>
+</html>
